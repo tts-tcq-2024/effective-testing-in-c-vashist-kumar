@@ -4,14 +4,14 @@
 
 int alertFailureCount = 0;
 
-void printMsg(const char *message) {
-    printf("%s\n", message);
+void printMsg(float temperature) {
+    printf("ALERT: Temperature is %.1f celcius.\n", temperature);
 }
 
-void (*printMessage)(const char *message) = printMsg;
+void (*printMessage)(floatmessage) = printMsg;
 
 int networkAlertStub(float celcius) {
-    printMessage("ALERT: Temperature is %.1f celcius.\n", celcius);
+    printMessage(celcius);
     // Return 200 for ok
     // Return 500 for not-ok
     // stub always succeeds and returns 200
