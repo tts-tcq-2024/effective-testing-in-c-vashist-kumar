@@ -52,7 +52,7 @@ void testPrintColorMap() {
     assert(result == 25);
 }
 int main() {
-    testPrintColorMap()
+    testPrintColorMap();
     printf("All is well (maybe!)\n");
     return 0;
 }
