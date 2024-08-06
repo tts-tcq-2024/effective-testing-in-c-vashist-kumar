@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
+#include "printMessage.h"
 
 int alertFailureCount = 0;
 
