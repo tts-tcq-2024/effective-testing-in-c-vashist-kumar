@@ -4,7 +4,6 @@
 #include "printMessage.h"
 #include "alerter.h"
 
-int alertFailureCount = 0;
 
 int networkAlertMock(float celcius) {
     printMessage(celcius);
