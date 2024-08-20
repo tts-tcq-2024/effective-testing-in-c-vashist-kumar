@@ -1,4 +1,6 @@
 
+int alertFailureCount = 0;
+
 int networkAlerter(float celcius) {
     printMessage(celcius);
     // Return 200 for ok
