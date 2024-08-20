@@ -22,5 +22,5 @@ jobs:
 
     - name: testAlerter fail
       run: |
-        g++ -Wall -Wextra -Werror alerter.c -o testAlerter.out
+        g++ -Wall -Wextra -Werror testAlerter.c -o testAlerter.out
         bash .github/workflows/expectfail.sh ./testAlerter.out
