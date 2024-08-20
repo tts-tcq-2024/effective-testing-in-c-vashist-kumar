@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <string.h>
 #include "printMessage.h"
+#include "alerter.h"
 
 int alertFailureCount = 0;
 
@@ -16,11 +17,11 @@ int networkAlertMock(float celcius) {
 
 
 int main() {
-    alertInCelcius(400.5,networkAlerter);
-    alertInCelcius(303.6,networkAlerter);
+    alertInCelcius(400.5,networkAlerterMock);
+    alertInCelcius(303.6,networkAlerterMock);
     assert(alertFailureCount==1);
     assert(alertFailureCount==0);
-    assert(alertInCelcius(350) == false);
+    assert(alertInCelcius(350,networkAlerterMock) == false);
     printf("%d alerts failed.\n", alertFailureCount);
     printf("All is well (maybe!)\n");
     return 0;
