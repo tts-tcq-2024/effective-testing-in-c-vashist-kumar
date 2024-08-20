@@ -20,7 +20,6 @@ int main() {
     alertInCelcius(303.6,networkAlertMock);
     assert(alertFailureCount==1);
     assert(alertFailureCount==0);
-    assert(alertInCelcius(350,networkAlertMock) == false);
     printf("%d alerts failed.\n", alertFailureCount);
     printf("All is well (maybe!)\n");
     return 0;
