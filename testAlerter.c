@@ -16,11 +16,11 @@ int networkAlertMock(float celcius) {
 
 
 int main() {
-    alertInCelcius(400.5,networkAlerterMock);
-    alertInCelcius(303.6,networkAlerterMock);
+    alertInCelcius(400.5,networkAlertMock);
+    alertInCelcius(303.6,networkAlertMock);
     assert(alertFailureCount==1);
     assert(alertFailureCount==0);
-    assert(alertInCelcius(350,networkAlerterMock) == false);
+    assert(alertInCelcius(350,networkAlertMock) == false);
     printf("%d alerts failed.\n", alertFailureCount);
     printf("All is well (maybe!)\n");
     return 0;
