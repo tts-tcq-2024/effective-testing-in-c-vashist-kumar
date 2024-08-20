@@ -20,7 +20,7 @@ jobs:
         g++ -Wall -Wextra -Werror misaligned.c -o misaligned.out
         bash .github/workflows/expectfail.sh ./misaligned.out
 
-    - name: alerter fail
+    - name: testAlerter fail
       run: |
-        g++ -Wall -Wextra -Werror alerter.c -o alerter.out
-        bash .github/workflows/expectfail.sh ./alerter.out
+        g++ -Wall -Wextra -Werror alerter.c -o testAlerter.out
+        bash .github/workflows/expectfail.sh ./testAlerter.out
